@@ -108,14 +108,126 @@ Dans le cas du NaCl : $r_+ = 98$pm, $r_- = 181$pm : $x = \np{0,54}$
 
 
 \section{Structure Blende: coordinence 4\--- 4}
+\subsection{Description de la structure}
+Les anions \index{anions}, ici les ions sulfures, occupent les n\oe uds d'un réseau cf et les cations \index{cations},
+ici les ions zinc(II), occupent la moitié des cavités tétraédriques
+\index{site!tétraédrique} de l’assemblage
+anionique, soit alternativement quatre des centres des huit petits cubes en lesquels on peut
+découper le cube de base de l’assemblage anionique.
+\begin{figure}
+    \centering
+    \subfloat[Maille de blende]
+    {\includegraphics[width=7cm]{chap3/zns.png}
+    \label{sfig:3_zns_maille}}
+    \qquad
+    \subfloat[Tangence dans la maille de blende]
+    {\includegraphics[width=8cm]{chap3/zns_tg.png}
+    \label{sfig:3_zns_tg}}
+    \caption{Représentations d'une maille de blende}\label{fig:3_zns}
+\end{figure}
+
+
+\subsection{Nombre de motifs par maille}
+Voir figure~\ref{sfig:3_zns_maille} :
+\begin{itemize}
+    \item 8 anions sommets
+    \item 6 anions centes de face
+    \item 4 cations dans la moitié des sites tétraédriques
+\end{itemize}
+\begin{gather*}
+    Z_- = 8 \times \frac{1}{8} + 6 \times \frac{1}{2} = 4\\
+    Z_+ = 4 \times 1 = 4
+\end{gather*}
+\begin{equation}
+    Z = 4
+\end{equation}
+
+
+\subsection{Coordinence}
+Voir figure~\ref{sfig:3_zns_tg} :\\
+\begin{gather}
+    \text{S}_{2^-}/\text{S}_{2^-} = \text{Zn}_{2^+}/\text{Zn}_{2^+} = 12\\
+    \text{Zn}_{2^+}/\text{S}_{2^-} = 4
+\end{gather}
+
+
+\subsection{Paramètre géométrique}
+Un cation est tangent avec un anion sur la diagonale du cube d'arête $\frac{a}{2}$,
+La diagonale d'un cube d'arête $\frac{a}{2}$ vaut :
+\begin{equation}
+    D = a\frac{\sqrt{3}}{2}
+\end{equation}
+Or :
+\begin{equation}
+    r_- + r_+ = \frac{D}{2}
+\end{equation}
+On obtient finalement en remplaçant:
+\begin{equation}
+    \boxed{a = \frac{4\sqrt{3}}{3}(r_- + r_+)}
+    \label{eq:3_zns_ar+r-}
+\end{equation}
+
+
+\subsection{Condition de stabilité}\index{stabilité!ZnS}
+\begin{equation}
+    \sqrt{2} - 1 \geq x \geq \sqrt{\frac{3}{2}} - 1
+    \label{eq:3_zns_stab}
+\end{equation}
+\begin{rem}
+    Pour le sulfure de zinc le rapport des rayons ioniques donne
+    $x = \frac{83}{190} = \np{0,44}$, résultat incompatible avec les précédents.
+    L'explication de cette incohérence tient à une
+    modélisation abusive : les ions sulfure, fortement polarisables, sont déformés 
+    par la présence de cations Zn$_{2^+}$ qui sont petits, fortements chargés et 
+    par conséquent fortement polarisants\index{polarité}.
+\end{rem}
 
 
 
+\section{Structure CsCl: coordinence 8\--- 8}
+Très peu de composés ioniques cristallisent dans cette structure, en particulier 
+aucun oxyde binaire métallique. Seuls les halogénures de césium, excepté le fluorure,
+cristallisent selon cette structure dans les conditions ordinaires de température et de
+pression. Cette structure est néanmoins courante pour les alliages.
 
 
+\subsection{Description de la structure}
+L'assemblage hôte est un système cubique simple de paramètre $a$. Les anions sont
+situés aux sommets du cube et les cations aux centres des cubes anioniques, dans une
+cavité à symétrie cubique, voir figure~\ref{fig:3_cscl_struct}.
+\begin{figure}
+    \centering
+    \includegraphics[width=5cm]{chap3/cscl_ecl.png}
+    \caption{Structure critalline du CsCl}\label{fig:3_cscl_struct}
+\end{figure}
 
 
+\subsection{Nombre de motifs par maille}
+La maille cubique contient en propre un anion et un cation, soit un groupe CsCl.
+La neutralité et la st\oe chiométrie sont bien respectées.
+\begin{figure}
+    \centering
+    \includegraphics[width=7cm]{chap3/cscl.png}
+    \caption{Maille de CsCl}\label{fig:3_cscl_maille}
+\end{figure}
 
+\subsection{Coordinence}
+Chaque cation est entouré de huit anions (voir figure~\ref{fig:3_cscl_maille})
+et comme les réseaux anioniques et cationiques sont équivalents, la coordinance
+de chaque ions prend la valeur 8.
+
+
+\subsection{Paramètre géométrique}
+Le cation est tangent aux anions selon la grande diagonale du cube. Dans une
+situation de contact, on a:
+\begin{equation}
+    2(r_+ + r_-) = a\sqrt{3}
+    \label{eq:3_cscl_ar+r-}
+\end{equation}
+
+
+\subsection{Condition de stabilité}
+à démontrer
 
 
 

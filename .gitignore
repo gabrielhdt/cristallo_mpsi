@@ -1,4 +1,7 @@
 pictures/
+*~
+*.ilg
+*.ind
 *.pdf
 *.fls
 *.idx
