@@ -1,0 +1,10 @@
+pictures/
+*.pdf
+*.fls
+*.idx
+*.log
+*.lof
+*.synctex.gz
+*.aux
+*.fdb_latexmk
+*.toc
