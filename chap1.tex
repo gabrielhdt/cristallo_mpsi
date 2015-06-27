@@ -1,0 +1,309 @@
+\chapter{L'état solide cristallin}
+
+L’état solide est l’état de la matière le plus ordonné.
+\section{Les différents états solides}
+\subsection{Cristal parfait}
+C'est le modèle idéal du solide cristallisé, il est constitué d'un arrangement
+périodique d’entités (atomes, ions, ou molécules) dans les trois directions
+de l’espace et à l’infini.
+\begin{rem}
+    Le cristal réel s'écarte de ce modèle
+\end{rem}
+
+\subsection{Cristal amorphe}
+\begin{defi}
+    Un cristal est dit amorphe si l'ordre est local, et le désordre existe
+    à longue distance
+\end{defi}
+
+\begin{ex}[le verre]
+    les verres sont le plus souvent obtenus par refroidissement d’un liquide
+    n’ayant pas pu cristalliser; ils apparaissent comme un liquide figé 
+    d’énorme viscosité. Cette forme de la matière est appelé état vitreux.
+\end{ex}
+
+\subsection{Cristal réel}
+Le cristal réel présente souvent des défauts (absence d'une entité, déplacement
+d'une entité par rapport à sa position parfaite \dots). Il n'est pas toujours 
+constitué d’un unique cristal mais de plusieurs monocristaux juxtaposés
+les uns aux autres, on l’appelle alors cristal polycristallin
+(voir figure~\ref{fig:quartz_rutile}).
+\begin{figure}
+    \centering
+    \includegraphics[width=10cm]{Quartz_a_rutile.jpg}
+    \caption{Quartz à rutile}\label{fig:quartz_rutile}
+\end{figure}
+\begin{rem}
+    Ce cours ne développe que la structure du cristal parfait, c'est-à-dire un
+    état \emph{cristallin parfaitement ordonné} à très grande distance
+    (idéalement à l'infini).
+\end{rem}
+
+
+\section{Modèle du cristal parfait}
+\subsection{Motif}
+Un cristal parfait résulte de la répétition périodique à l’infini, dans
+les trois dimensions de l’espace, d’une entité élémentaire (atome, ion
+ou molécule) appelée \emph{motif}.
+\begin{defi}
+    Le motif d'un cristal est la plus petite entité (atome ou groupe d'atomes)
+    qui se répète périodiquement.
+\end{defi}
+\begin{table}
+    \centering
+    \begin{tabular}{|l|c|c|c|c|}
+        \hline Type de cristal & Métallique & Covalent & Moléculaire
+        & Ionique \\
+        \hline Motif & Atome & Atome & Molécule & Ions \\
+        Exemple & $Cu$ & $C$ & $H_2O$ & $Na^+,Cl^-$ \\ \hline
+    \end{tabular}
+    \caption{Exemples de motifs}
+\end{table}
+
+\subsection{Réseau}
+\begin{defi}
+    Un réseau est un outil géométrique permettant de décrire l’arrangement
+    périodique tridimensionnel de points appelés des nœuds.
+\end{defi}
+\begin{figure}
+    \centering
+    \includegraphics[width=6cm]{reseau.png}
+    \caption{Exemples de réseaux}
+\end{figure}
+Un cristal est l'association d'un réseau et d'un motif placé aux noeuds du
+réseau
+
+\subsection{Maille}
+Les noeuds du réseau se déduisent les uns des autres par des opérations
+de translation, combinaison linéaire de trois vecteurs non coplanaires. Ces
+trois vecteurs définissent une structure parallélépipédique appelée
+\emph{maille}.
+\begin{defi}
+    Une maille est une unité de base parallélépipédique à partir de laquelle
+    on peut décrire tout le cristal en lui faisant subir différentes
+    translations suivant les directions des trois axes cristallins.
+\end{defi}
+
+\subsection{Les sept systèmes cristallins}
+Les réseaux cristallins peuvent être décrits à partir de \emph{7 mailles
+élémentaires} qui définissent \emph{7 systèmes cristallins}.
+Selon que la maille est simple (un seul motif par maille) ou multiple, et à
+partir de ces 7 systèmes cristallins, on définit
+\emph{14 réseaux de \bsc{Bravais}} (cf table~\ref{tab:bravais}).
+\begin{table}
+    \footnotesize
+    \begin{tabulary}{\linewidth}{|p{2.5cm}|c|c|c|c|}
+        \hline \bf Système & Type P & Type C & Type I & Type F \\\hline
+        Cubique, \mbox{$a = b = c$}
+        \mbox{$\alpha = \beta = \gamma = \sfrac{\pi}{2}$} &
+        \includegraphics[width=2.2cm]{bravais_cp.png} & & 
+        \includegraphics[width=2.2cm]{bravais_ci.png} &
+        \includegraphics[width=2.2cm]{bravais_cf.png} 
+        \\
+        \hline Rhomboédrique $a = b = c$,
+        \mbox{$\alpha = \beta = \gamma \neq \sfrac{\pi}{2}$}&
+        \includegraphics[width=2.2cm]{bravais_rp.png} & & &
+        \\
+        \hline Hexagonal $a = b \neq c$
+        \mbox{$\alpha = \beta = \sfrac{\pi}{2}$ $\gamma = \sfrac{2\pi}{3}$} &
+        \includegraphics[width=2.2cm]{bravais_hp.png} & & &
+        \\
+        \hline Quadratique $a = b \neq c$
+        \mbox{$\alpha = \beta = \gamma = \sfrac{\pi}{2}$} &
+        \includegraphics[width=2.2cm]{bravais_qp.png} & &
+        \includegraphics[width=2.2cm]{bravais_qi.png} &
+        \\
+        \hline Orthorombique $a \neq b \neq c$
+        \mbox{$\alpha = \beta = \gamma = \sfrac{\pi}{2}$} &
+        \includegraphics[width=2.2cm]{bravais_op.png} &
+        \includegraphics[width=2.2cm]{bravais_oc.png} &
+        \includegraphics[width=2.2cm]{bravais_oi.png} &
+        \includegraphics[width=2.2cm]{bravais_of.png}
+        \\
+        \hline Monoclinique $a \neq b \neq c$
+        \mbox{$\alpha=\gamma=\sfrac{\pi}{2} \neq \beta$}
+        &
+        \includegraphics[width=2.2cm]{bravais_mp.png} &
+        \includegraphics[width=2.2cm]{bravais_mc.png} & &
+        \\
+        \hline Triclinique $a \neq b \neq c$
+        \mbox{$\alpha \neq \beta \neq \gamma \neq \sfrac{\pi}{2}$} &
+        \includegraphics[width=2.2cm]{bravais_tp.png} & & &
+        \\
+        \hline
+    \end{tabulary}
+    \caption{Les 14 réseaux de \bsc{Bravais}}\label{tab:bravais}
+\end{table}
+
+\subsection{Caractéristiques des réseaux cristallins}
+\subsubsection{Volume d'une maille}
+\begin{prop}
+    \begin{equation}
+        V = (\vec{a} \wedge \vec{b}) \centerdot \vec{c}
+        \label{eq:volume}
+    \end{equation}
+\end{prop}
+
+\subsubsection{Modèle des sphères dures}
+Les atomes, ions ou molécules constituant le solide cristallin parfait seront
+supposés être des sphères indéformables et compactes.
+
+\subsubsection{Nombre de motifs par maille}
+Une maille est dite \emph{unitaire} si elle ne comporte qu'un seul motif,
+\emph{multiple} si elle en comporte plusieurs.
+\paragraph{Détermination du nombre de motifs par maille $Z$}
+\begin{itemize}
+    \item un élément extérieur à la maille compte pour $0$
+    \item un élément intérieur à la maille compte pour $1$
+    \item un élément au sommet de la maille compte pour $\frac{1}{8}$
+    \item un élément sur une arête compte pour $\frac{1}{4}$
+    \item un élément sur une face compte pour $\frac{1}{2}$
+\end{itemize}
+
+\subsubsection{Coordinence}
+\begin{defi}[Coordinence de l'atome ou ion $A$ par rapport à $V$]
+    nombre $x$ de plus proches voisins $V$ de $A$ noté $A/V = [x]$
+\end{defi}
+
+\subsubsection{Masse volumique}
+\begin{defi}[Masse volumique ramenée à une maille]
+    Rapport de la masse d'une maille et de son volume :
+    \begin{equation}
+        \rho = \frac{ZM}{\mathcal{N}_aV}\label{eq:masse_volumique}
+    \end{equation}
+    \begin{itemize}
+        \item $Z$ nombre de motifs par maille
+        \item $M$ masse molaire du motif
+        \item $\mathcal{N}_a$ nombre d'Avogadro
+        \item $V$ volume de la maille
+    \end{itemize}
+\end{defi}
+
+\subsubsection{Compacité $C$}
+\begin{defi}
+    Nombre sans dimension qui mesure le taux d'occupation réel de l'espace
+    par les atomes ou ions assimilés à des sphères.\\
+    Elle est toujour comprise entre 0 et 1
+    \begin{equation}
+        C = \frac{4}{3}\frac{N \pi r^3}{V} \label{eq:comp}
+    \end{equation}
+    \begin{itemize}
+        \item $N$ nombre de motifs
+        \item $r$ rayon des atomes ou ions
+        \item $V$ volume de la maille
+    \end{itemize}
+\end{defi}
+
+\subsection{Sites}
+Tout réseau cristallin de sphères identiques $S$ de rayon $R$ comporte
+nécessairement des portions d'espace non occupées puisque $C < 1$; ils
+constituent des sites. Le réseau constitué des sphères $S$ s'appelle le
+\emph{réseau h\^ote}.
+\begin{defi}[Site intersticiel]
+    Centre de polyèdre de coordination, régulier ou non, ayant pour sommets
+    les centres des premiers voisins du réseau h\^ote
+\end{defi}
+\begin{ex}[cf figure~\ref{fig:ex_sites}]
+    \begin{description}
+        \item[Site cubique C] le polyèdre de coordination est un cube :
+            $C/S = [8]$
+        \item[Site octaédrique O] le polyèdre de coordination est un
+            octaèdre à 6 sommets et 8 faces $O/S = [6]$
+        \item[Site tétraédrique T] le polyèdre de coordination est un
+            tétraèdre à 4 sommets et 4 faces $T/S = [4]$
+    \end{description}
+\end{ex}
+\begin{figure}
+    \centering
+    \input{pictures/ex_sites.pdf_tex}
+    \caption{Site octaédrique (rouge) et tétraédrique (bleu)}\label{fig:ex_sites}
+\end{figure}
+
+
+\section{Les différents modèles de cristaux}
+\begin{description}
+    \item[Cristaux moléculaires] Ce sont des cristaux ayant pour motif une
+        molécule. Ils présentent des intéractions électriques
+    \item[Cristaux métalliques] Ils ont pour motif un atome métalliques, les
+        atomes n'ont pas de liaison directe, seulement un mise en commun
+        d'électrons.
+    \item[Cristaux ioniques] Ils sont constitués de cations et d'anions. Ils
+        attirent les charges.
+    \item[Cristaux covalents] Constitués d'atomes
+\end{description}
+Les modèles sont listés par odre croissant de force des liaisons. Ainsi, les
+cristaux covalents requièrent plus d'énergie pour briser les liaisons.
+
+
+\subsection*{Exemples de cristaux}
+\begin{ex}[Cristaux métalliques]
+    \begin{description}
+        \item[CC] Fer $\alpha$, Chrome, Tungstène, \dots
+        \item[CFC] Fer $\gamma$, Or, Ag, Aluminium, Cuivre, \dots
+        \item[HC] Zinc, Titane, Cadmium, \dots
+        \item[CP] Seulement le Polonium.
+    \end{description}
+\end{ex}
+\begin{rem}
+    Toutes les sphères font le même diamètre, donc le cubique simple n'est pas
+    très stable et peu rencontré.
+\end{rem}
+
+\subsubsection*{Cristaux ioniques}
+\begin{ex}[Chlorure de Césium CsCl]
+    Un ion $\text{Cl}^-$ se trouve sur chaque coin du cube ($N_1 = 1$), un ion
+    Césium $\text{Cs}^+$ se trouve au centre du cube ($N_2 = 1$).\\
+    Cela donne une structure cubique centrée justifiée par les rayons des ions
+    : $r(\text{Cl}^-) = 181\text{pm}, r(\text{Cs}^+) = 94 =\text{pm}$
+\end{ex}
+\begin{ex}[NaCl cf figure~\ref{fig:NaCl}]
+    Les ions Chlorure Cl$^-$ s'organisent en CFC ($N_1 = 4$), les ions Sodium
+    Na$^+$ occupent le milieu de chaque arête ainsi que le centre du cube
+    ($N_2 = 4$).\\
+    Cela donne une structure cubique simple justifiée par les rayons des
+    ions :
+    $r(\text{Cl}^-) = 181\text{pm}, r(\text{Na}^+) = 97\text{pm}$
+\end{ex}
+\begin{figure}
+    \centering
+    \includegraphics[width=6cm]{nacl.png}
+    \caption{Structure du NaCl}\label{fig:NaCl}
+\end{figure}
+
+\begin{rem}[Variétés allotropiques]
+    Un corps peut exister sous différentes formes cristallines. Par exemple,
+    le fer $\alpha$ et le fer $\gamma$ sont des variétés allotropiques du
+    fer.
+\end{rem}
+
+\subsubsection*{Cristaux covalents}
+\begin{ex}[Carbone cf~\ref{fig:carbone}]
+    Sous forme de diamant (figure~\ref{fig:diamant}) chaque atome de
+    carbone est lié à ses 4 voisins les plus proches et a donc une
+    structure tétraédrique très robuste.\\
+    Sous forme de graphite (figure~\ref{fig:graphite}) les atomes de
+    carbone s'organisent en feuillets hexagonaux régulièrement
+    espacés et décalés.
+\end{ex}
+\begin{figure}
+    \centering
+    \subfloat[Diamant]
+        {\includegraphics[width=5cm]{diamant.png}\label{fig:diamant}}
+    \qquad
+    \subfloat[Graphite]
+    {\includegraphics[width=6cm]{chap4/graphite.png}\label{fig:graphite}}
+    \caption{Structures cristallines du carbone}\label{fig:carbone}
+\end{figure}
+
+\subsubsection*{Cristaux moléculaires}
+\begin{ex}[Eau]
+    Les molécules d'eau H$_2$0 s'agglomèrent suivant plusieurs structures,
+    il y a plus d'une dizaine de variétés allotropiques. Un exemple
+    est donné figure~\ref{fig:glace}. Une molécule d'eau est placée
+    à chaque noeud du réseau cristallin.
+\end{ex}
+\begin{figure}
+    \centering
+    \includegraphics[width=5cm]{glace.png}
+    \caption{Structure cristalline de l'eau}\label{fig:glace}
+\end{figure}
