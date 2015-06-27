@@ -1,6 +1,4 @@
 \chapter{L'état solide cristallin}
-
-L’état solide est l’état de la matière le plus ordonné.
 \section{Les différents états solides}
 \subsection{Cristal parfait}
 C'est le modèle idéal du solide cristallisé, il est constitué d'un arrangement
@@ -11,11 +9,8 @@ de l’espace et à l’infini.
 \end{rem}
 
 \subsection{Cristal amorphe}
-\begin{defi}
-    Un cristal est dit amorphe si l'ordre est local, et le désordre existe
-    à longue distance
-\end{defi}
-
+Un cristal est dit amorphe si l'ordre est local, et le désordre existe
+à longue distance.
 \begin{ex}[le verre]
     les verres sont le plus souvent obtenus par refroidissement d’un liquide
     n’ayant pas pu cristalliser; ils apparaissent comme un liquide figé 
@@ -44,7 +39,8 @@ les uns aux autres, on l’appelle alors cristal polycristallin
 \subsection{Motif}
 Un cristal parfait résulte de la répétition périodique à l’infini, dans
 les trois dimensions de l’espace, d’une entité élémentaire (atome, ion
-ou molécule) appelée \emph{motif}.
+ou molécule voire macromolécule) appelée \emph{motif}. Voir la
+table~\ref{tab:1_motifs_ex} pour des exemples de motifs.
 \begin{defi}
     Le motif d'un cristal est la plus petite entité (atome ou groupe d'atomes)
     qui se répète périodiquement.
@@ -57,10 +53,12 @@ ou molécule) appelée \emph{motif}.
         \hline Motif & Atome & Atome & Molécule & Ions \\
         Exemple & Cu & C & H$_2$O & Na$^+$,Cl$^-$ \\ \hline
     \end{tabular}
-    \caption{Exemples de motifs}
+    \caption{Exemples de motifs}\label{tab:1_motifs_ex}
 \end{table}
 
 \subsection{Réseau}
+La description d'un cristal requiert un support géométrique, c’est-à-dire un 
+ensemble de points où on place le motif.
 \begin{defi}
     Un réseau est un outil géométrique permettant de décrire l’arrangement
     périodique tridimensionnel de points appelés des nœuds.
@@ -71,11 +69,12 @@ ou molécule) appelée \emph{motif}.
     \caption{Exemples de réseaux}
 \end{figure}
 Un cristal est l'association d'un réseau et d'un motif placé aux noeuds du
-réseau
+réseau.
 
 \subsection{Maille}
 Les noeuds du réseau se déduisent les uns des autres par des opérations
-de translation, combinaison linéaire de trois vecteurs non coplanaires. Ces
+de translation, combinaison linéaire de trois vecteurs non coplanaires
+(usuellement notés $\vec{a}, \vec{b}, \vec{c}$). Ces
 trois vecteurs définissent une structure parallélépipédique appelée
 \emph{maille}.
 \begin{defi}
@@ -89,7 +88,26 @@ Les réseaux cristallins peuvent être décrits à partir de \emph{7 mailles
 élémentaires} qui définissent \emph{7 systèmes cristallins}.
 Selon que la maille est simple (un seul motif par maille) ou multiple, et à
 partir de ces 7 systèmes cristallins, on définit
-\emph{14 réseaux de \bsc{Bravais}} (cf table~\ref{tab:bravais}).
+\emph{14 réseaux de \bsc{Bravais}} (cf table~\ref{tab:bravais}). On distingue
+parmis les systèmes différents modes cristallins :
+\begin{description}
+    \item[P]  mode primitif, n\oe uds de réseaux seulement aux sommets de la 
+        maille;
+    \item[I] un n\oe ud de réseau au centre du volume de la maille;
+    \item[C] un n\oe ud de réseau au centre de la face C de la maille, définie par 
+        les axes $\vec{a}$ et $\vec{b}$;
+    \item[F] un n\oe ud de réseau au centre de chaque face de la maille.
+\end{description}
+\begin{rem}
+    Il existe aussi les modes de réseaux A, B et R, mais ils ne seront pas étudiés
+    dans ce cours (les modes A et B sont semblables au mode C).
+\end{rem}
+\begin{rem}
+    Les structures cubiques F seront appelées \emph{CFC} pour \emph{cubique à
+    faces centrées}. Les structures hexagonales P seront appelées \emph{HC}
+    pour \emph{hexagonal compacte}.
+\end{rem}
+
 \begin{table}
     \footnotesize
     \begin{tabulary}{\linewidth}{|p{2.5cm}|c|c|c|c|}
@@ -148,6 +166,10 @@ partir de ces 7 systèmes cristallins, on définit
 Les atomes, ions ou molécules constituant le solide cristallin parfait seront
 supposés être des sphères indéformables et compactes.
 
+\subsection{Famille cristalline}
+Ensemble des matériaux ayant même structure et présentant une forte analogie des
+propriétés chimiques et physiques.
+
 \subsubsection{Nombre de motifs par maille}
 Une maille est dite \emph{unitaire} si elle ne comporte qu'un seul motif,
 \emph{multiple} si elle en comporte plusieurs.
@@ -169,12 +191,12 @@ Une maille est dite \emph{unitaire} si elle ne comporte qu'un seul motif,
 \begin{defi}[Masse volumique ramenée à une maille]
     Rapport de la masse d'une maille et de son volume :
     \begin{equation}
-        \rho = \frac{ZM}{\mathcal{N}_aV}\label{eq:masse_volumique}
+        \rho = \frac{ZM}{\mathcal{N}_\text{A}V}\label{eq:masse_volumique}
     \end{equation}
     \begin{itemize}
         \item $Z$ nombre de motifs par maille
         \item $M$ masse molaire du motif
-        \item $\mathcal{N}_a$ nombre d'Avogadro
+        \item $\mathcal{N}_\text{A}$ nombre d'Avogadro
         \item $V$ volume de la maille
     \end{itemize}
 \end{defi}
@@ -204,14 +226,14 @@ constituent des sites. Le réseau constitué des sphères $S$ s'appelle le
     les centres des premiers voisins du réseau h\^ote
 \end{defi}
 \begin{ex}[cf figure~\ref{fig:ex_sites}]
-    \begin{description}
+    \begin{compactdesc}
         \item[Site cubique C] le polyèdre de coordination est un cube :
             $C/S = [8]$
         \item[Site octaédrique O] le polyèdre de coordination est un
             octaèdre à 6 sommets et 8 faces $O/S = [6]$
         \item[Site tétraédrique T] le polyèdre de coordination est un
             tétraèdre à 4 sommets et 4 faces $T/S = [4]$
-    \end{description}
+    \end{compactdesc}
 \end{ex}
 \begin{figure}
     \centering
