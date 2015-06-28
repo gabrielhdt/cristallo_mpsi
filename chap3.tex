@@ -8,7 +8,16 @@ Les cations s’insèrent dans les sites de ce cristal en respectant les contrai
 géométriques. Les ions de signe opposé sont en contact, de sorte que l'interaction attractive
 soit la plus forte possible. Les anions constituant le cristal hôte ne sont alors 
 pas tangents. La proportion anions/cations dans la structure cristalline est régie 
-par la règle de la neutralité électrique.
+par la règle de la neutralité électrique.\\
+Dans tout le chapitre, on utilisera les paramètres :
+\begin{description}
+    \item[a] paramètre de maille;
+    \item[$r_+$] rayon du cation;
+    \item[$r_-$] rayon de l'anion;
+    \item[$x$] rapport $\frac{r_+}{r_-}$;
+    \item[$Z_+$] nombre de cations par maille;
+    \item[$Z_-$] nombre d'anions par maille.
+\end{description}
 
 \section{Structure NaCl: coordinence 6\--- 6}\index{NaCl}
 De nombreux oxydes métalliques de formule brute MO cristallisent dans cette
@@ -23,29 +32,22 @@ structure, l'ion O$^{2-}$ étant relativement petit ($r(\text{O}^{2-} = 126$pm).
 Les anions \index{anions} occupent les n\oe uds d'un réseau de translation cubique à faces
 centrées et les cations occupent les cavité octaédriques \index{site!octaédrique} de la structure,
 au centre du cube et au milieu des arêtes.\\
-On utilisera les paramètres :
-\begin{description}
-    \item[a] paramètre de maille;
-    \item[$r_+$] rayon du cation;
-    \item[$r_-$] rayon de l'anion;
-    \item[$x$] rapport $\frac{r_+}{r_-}$;
-    \item[$Z_+$] nombre de cations par maille;
-    \item[$Z_-$] nombre d'anions par maille.
-\end{description}
+
 \begin{figure}
     \centering
-    \subfloat[Vue éclatée]
-    {\includegraphics[width=4cm]{chap3/nacl_maille eclatee.png}
-    \label{sfig:3_nacl_maille_eclatee}}
-    \qquad
     \subfloat[Vue compacte]
     {\includegraphics[width=4cm]{chap3/nacl_maille_compacte.png}
     \label{sfig:3_nacl_maille_compacte}}
+    \qquad
+    \subfloat[Vue éclatée]
+    {\includegraphics[width=4cm]{chap3/nacl_maille_eclatee.png}
+    \label{sfig:3_nacl_maille_eclatee}}
     \caption{Maille de NaCl}\label{fig:3_nacl_struct}
 \end{figure}
 
 
 \subsection{Nombre de motifs par maille}
+Voir figure~\ref{sfig:3_nacl_maille_eclatee}.
 \begin{itemize}
     \item 8 anions sommets
     \item 6 anions centres de face
@@ -71,11 +73,11 @@ Il y a quatre motifs NaCl par maille.
 \subsection{Coordinence}
 Chaque cation est par construction entouré de manière octaédrique par six anions
 de signe opposé. Comme les réseaux cfc des anions et des cations sont équivalents, il
-s'agit bien d’une coordinence 6/6.
+s'agit bien d’une coordinence 6/6. Cf figure~\ref{fig:3_nacl_voisins}.
 \begin{figure}
     \centering
-    \includegraphics[width=6cm]{chap3/voisins_nacl.png}
-    \caption{Plus proches voisins d'un ion dans le cristal de NaCl}
+    \includegraphics[width=3cm]{chap3/nacl_voisins_2.png}
+    \caption{Voisinage d'un ion dans le cristal de NaCl}
     \label{fig:3_nacl_voisins}
 \end{figure}
 
@@ -84,9 +86,10 @@ s'agit bien d’une coordinence 6/6.
 \begin{figure}
     \centering
     \includegraphics[width=7cm]{chap3/nacl_prm_geo.png}
-    \caption{Coupe d'une maille de NaCl}\label{fig:3_nacl_maille_coupe}
+    \caption{Coupes d'une maille de NaCl}\label{fig:3_nacl_maille_coupe}
 \end{figure}
-Les cations sont tangents aux anions le long d'une arête. Cela engendre:
+Les cations sont tangents aux anions le long d'une arête (cf figure~\ref{fig:3_nacl_maille_coupe}).
+Cela engendre:
 \begin{equation}
     2r_+ + 2r_- = a
     \label{eq:3_nacl_ar}
@@ -114,28 +117,33 @@ Dans le cas du NaCl : $r_+ = 98$pm, $r_- = 181$pm : $x = \np{0,54}$
 
 
 
-\section{Structure Blende: coordinence 4\--- 4}
+\section{Structure Blende: coordinence 4\--- 4}\index{blende}
 \subsection{Description de la structure}
-Les anions \index{anions}, ici les ions sulfures, occupent les n\oe uds d'un réseau cf et les cations \index{cations},
+Les anions, ici les ions sulfures, occupent les n\oe uds d'un réseau cf et les cations,
 ici les ions zinc(II), occupent la moitié des cavités tétraédriques
 \index{site!tétraédrique} de l’assemblage
 anionique, soit alternativement quatre des centres des huit petits cubes en lesquels on peut
-découper le cube de base de l’assemblage anionique.
+découper le cube de base de l’assemblage anionique. Voir figures~\ref{sfig:3_zns_maille_compacte}
+et~\ref{sfig:3_zns_maille_eclatee}
 \begin{figure}
     \centering
-    \subfloat[Maille de blende]
-    {\includegraphics[width=7cm]{chap3/zns.png}
-    \label{sfig:3_zns_maille}}
+    \subfloat[Vue compacte]
+    {\includegraphics[width=4cm]{chap3/zns_compacte.png}
+    \label{sfig:3_zns_maille_compacte}}
+    \qquad
+    \subfloat[Vue éclatée]
+    {\includegraphics[width=4cm]{chap3/zns_eclatee.png}
+    \label{sfig:3_zns_maille_eclatee}}
     \qquad
     \subfloat[Tangence dans la maille de blende]
-    {\includegraphics[width=8cm]{chap3/zns_tg.png}
+    {\includegraphics[width=4cm]{chap3/zns_tg.png}
     \label{sfig:3_zns_tg}}
     \caption{Représentations d'une maille de blende}\label{fig:3_zns}
 \end{figure}
 
 
 \subsection{Nombre de motifs par maille}
-Voir figure~\ref{sfig:3_zns_maille} :
+Voir figure~\ref{sfig:3_zns_maille_eclatee} :
 \begin{itemize}
     \item 8 anions sommets
     \item 6 anions centes de face
@@ -159,11 +167,9 @@ Voir figure~\ref{sfig:3_zns_tg} :\\
 
 
 \subsection{Paramètre géométrique}
-Un cation est tangent avec un anion sur la diagonale du cube d'arête $\frac{a}{2}$,
-La diagonale d'un cube d'arête $\frac{a}{2}$ vaut :
-\begin{equation}
-    D = a\frac{\sqrt{3}}{2}
-\end{equation}
+Un cation est tangent avec un anion sur la diagonale du cube d'arête $\frac{a}{2}$
+(cf figure~\ref{sfig:3_zns_tg}),
+La diagonale d'un cube d'arête $\frac{a}{2}$ vaut $D = a\frac{\sqrt{3}}{2}$.\\
 Or :
 \begin{equation}
     r_- + r_+ = \frac{D}{2}
@@ -214,7 +220,17 @@ La maille cubique contient en propre un anion et un cation, soit un groupe CsCl.
 La neutralité et la st\oe chiométrie sont bien respectées.
 \begin{figure}
     \centering
-    \includegraphics[width=7cm]{chap3/cscl.png}
+    \subfloat[Réseau hôte]
+    {\includegraphics[width=3cm]{chap3/cscl_1.png}
+    \label{sfig:3_cscl_resau_hote}}
+    \qquad
+    \subfloat[Vue compacte]
+    {\includegraphics[width=3cm]{chap3/cscl_2.png}
+    \label{sfig:3_cscl_compacte}}
+    \qquad
+    \subfloat[Tangence]
+    {\includegraphics[width=3cm]{chap3/cscl_3.png}
+    \label{sfig:3_cscl_tg}}
     \caption{Maille de CsCl}\label{fig:3_cscl_maille}
 \end{figure}
 
@@ -279,7 +295,7 @@ Les cations occupent les n\oe uds d'un réseau cfc de côté $a$, très peu comp
 occupent les sites tétraédriques c'est-à-dire les centres des huit petits cubes.
 \begin{figure}
     \centering
-    \includegraphics[width=6cm]{chap3/fluorine.png}
+    \includegraphics[width=12cm]{chap3/fluorine.png}
     \caption{Structure cristalline de la fluorine}\label{fig:3_fluorine}
 \end{figure}
 
