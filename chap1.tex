@@ -21,7 +21,7 @@ Un cristal est dit amorphe si l'ordre est local, et le désordre existe
 Le cristal réel présente souvent des défauts (absence d'une entité, déplacement
 d'une entité par rapport à sa position parfaite \dots). Il n'est pas toujours 
 constitué d’un unique cristal mais de plusieurs monocristaux juxtaposés
-les uns aux autres, on l’appelle alors cristal polycristallin
+les uns aux autres, on l’appelle alors cristal polycristallin\index{polycristal}
 (voir figure~\ref{fig:quartz_rutile}).
 \begin{figure}
     \centering
@@ -95,7 +95,7 @@ parmis les systèmes différents modes cristallins :
 \index{Bravais, réseau de}\index{mode cristallin}
 \begin{description}
     \item[P]  mode primitif, n\oe uds de réseaux seulement aux sommets de la 
-        maille;
+        maille;\index{primitif|see{mode cristallin}}
     \item[I] un n\oe ud de réseau au centre du volume de la maille;
     \item[C] un n\oe ud de réseau au centre de la face C de la maille, définie par 
         les axes $\vec{a}$ et $\vec{b}$;
@@ -173,7 +173,7 @@ supposés être des sphères indéformables et compactes.
 Ensemble des matériaux ayant même structure et présentant une forte analogie des
 propriétés chimiques et physiques.
 
-\subsubsection{Nombre de motifs par maille}\index{maille}
+\subsubsection{Nombre de motifs par maille}\index{maille!motifs par maille}
 Une maille est dite \emph{unitaire} si elle ne comporte qu'un seul motif,
 \emph{multiple} si elle en comporte plusieurs.
 \paragraph{Détermination du nombre de motifs par maille $Z$}
@@ -185,7 +185,7 @@ Une maille est dite \emph{unitaire} si elle ne comporte qu'un seul motif,
     \item un élément sur une face compte pour $\frac{1}{2}$
 \end{itemize}
 
-\subsubsection{Coordinence}\index{coordinence}
+\subsubsection{Coordinence}\index{coordinence}\index{voisins|see{coordinence}}
 \begin{defi}[Coordinence de l'atome ou ion $A$ par rapport à $V$]
     nombre $x$ de plus proches voisins $V$ de $A$ noté $A/V = [x]$
 \end{defi}
@@ -219,7 +219,7 @@ Une maille est dite \emph{unitaire} si elle ne comporte qu'un seul motif,
     \end{itemize}
 \end{defi}
 
-\subsection{Sites}\index{site}
+\subsection{Sites}\index{site}\index{cavité|see{site}}
 Tout réseau cristallin de sphères identiques $S$ de rayon $R$ comporte
 nécessairement des portions d'espace non occupées puisque $C < 1$; ils
 constituent des sites. Le réseau constitué des sphères $S$ s'appelle le
@@ -231,25 +231,25 @@ constituent des sites. Le réseau constitué des sphères $S$ s'appelle le
 \begin{ex}[cf figure~\ref{fig:2_cfc_sites}]
     \begin{compactdesc}
         \item[Site cubique C] le polyèdre de coordination est un cube :
-            $C/S = [8]$
+            $C/S = [8]$\index{site!cubique}
         \item[Site octaédrique O] le polyèdre de coordination est un
-            octaèdre à 6 sommets et 8 faces $O/S = [6]$
+            octaèdre à 6 sommets et 8 faces $O/S = [6]$\index{site!octaédrique}
         \item[Site tétraédrique T] le polyèdre de coordination est un
-            tétraèdre à 4 sommets et 4 faces $T/S = [4]$
+            tétraèdre à 4 sommets et 4 faces $T/S = [4]$\index{site!tétraédrique}
     \end{compactdesc}
 \end{ex}
 
 
-\section{Les différents modèles de cristaux}\index{cristal}
+\section{Les différents modèles de cristaux}
 \begin{description}
     \item[Cristaux moléculaires] Ce sont des cristaux ayant pour motif une
-        molécule. Ils présentent des intéractions électriques
+        molécule. Ils présentent des intéractions électriques.\index{cristal!moléculaire}
     \item[Cristaux métalliques] Ils ont pour motif un atome métalliques, les
         atomes n'ont pas de liaison directe, seulement un mise en commun
-        d'électrons.
+        d'électrons.\index{cristal!métallique}
     \item[Cristaux ioniques] Ils sont constitués de cations et d'anions. Ils
-        attirent les charges.
-    \item[Cristaux covalents] Constitués d'atomes
+        attirent les charges.\index{cristal!ionique}
+    \item[Cristaux covalents] Constitués d'atomes.\index{cristal!covalent}
 \end{description}
 Les modèles sont listés par odre croissant de force des liaisons. Ainsi, les
 cristaux covalents sont ceux qui requièrent le plus d'énergie pour briser
@@ -257,7 +257,7 @@ les liaisons.\index{cohésion, énergie de}
 
 
 \subsection*{Exemples de cristaux}
-\begin{ex}[Cristaux métalliques]
+\begin{ex}[Cristaux métalliques]\index{cristal!métallique}
     \begin{compactdesc}
         \item[CC] Fer $\alpha$, Chrome, Tungstène, \dots
             \index{fer}\index{chrome}\index{tungstène}
@@ -274,7 +274,7 @@ les liaisons.\index{cohésion, énergie de}
     très stable et peu rencontré.\index{cubique simple}
 \end{rem}
 
-\subsubsection*{Cristaux ioniques}
+\subsubsection*{Cristaux ioniques}\index{cristal!ionique}
 \begin{ex}[Chlorure de Césium CsCl cf figure~\ref{fig:3_cscl_struct} page~\pageref{fig:3_cscl_struct}]
     \index{CsCl}
     Un ion $\text{Cl}^-$ se trouve sur chaque coin du cube ($N_1 = 1$), un ion
@@ -298,7 +298,7 @@ les liaisons.\index{cohésion, énergie de}
     fer.
 \end{rem}
 
-\subsubsection*{Cristaux covalents}
+\subsubsection*{Cristaux covalents}\index{cristal!covalent}
 \begin{ex}[Carbone]\index{carbone}\index{diamant}\index{graphite}
     Sous forme de diamant (figure~\ref{fig:4_diamant_eclatee}
     page~\pageref{fig:4_diamant_eclatee}) chaque atome de
@@ -307,14 +307,15 @@ les liaisons.\index{cohésion, énergie de}
     Sous forme de graphite (figure~\ref{fig:4_graphite_3d}
     page~\pageref{fig:4_graphite_3d}) les atomes de
     carbone s'organisent en feuillets hexagonaux régulièrement
-    espacés et décalés.
+    espacés et décalés.\index{feuillet}
 \end{ex}
 
 
-\subsubsection*{Cristaux moléculaires}
+\subsubsection*{Cristaux moléculaires}\index{cristal!moléculaire}
 \begin{ex}[Eau]\index{eau}\index{H$_2$O|see{eau}}
     Les molécules d'eau H$_2$0 s'agglomèrent suivant plusieurs structures,
-    il y a plus d'une dizaine de variétés allotropiques. Un exemple
+    il y a plus d'une dizaine de variétés allotropiques.
+    \index{allotropique, variété}Un exemple
     est donné figure~\ref{fig:4_glace} page~\pageref{fig:4_glace}. Une molécule d'eau est placée
     à chaque noeud du réseau cristallin.
 \end{ex}
