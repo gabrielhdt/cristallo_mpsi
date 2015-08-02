@@ -132,13 +132,11 @@ Voir figure~\ref{fig:maille_cfc}.
 \end{equation}
 \subsection{Compacité}
 La formule de la compacité~\ref{eq:comp} nous donne
-\begin{equation*}
-    C = \frac{4 \frac{4}{3} \pi r^3}{a^3}
-\end{equation*}
-d'où, en remplaçant $r$ avec~\ref{eq:r},
-\begin{equation}
+\begin{gather}
+    C = \frac{4 \frac{4}{3} \pi r^3}{a^3}\\
+    \intertext{d'où, en remplaçant $r$ avec~\ref{eq:r},}
     \boxed{C = \frac{\pi}{3\sqrt{2}} \approx 0.74}
-\end{equation}
+\end{gather}
 
 \subsection{Sites}
 Compte tenu de la compacité, il existe des sites entre les motifs.
@@ -166,13 +164,11 @@ Soit $r_{\text{O,max}}$ le rayon maximal d'un atome étranger.
 Les sphères (atomes h\^otes et étrangers) étant tangentes le
 long du c\^oté de la maille, on a :\index{réseau!hôte}
 \index{étranger, atome}
-\begin{equation}
-    a = 2r + 2r_{\text{O,max}}
-\end{equation}
-d'où, en remplaçant $a$ à l'aide de~\ref{eq:r} :
-\begin{equation}
+\begin{gather}
+    a = 2r + 2r_{\text{O,max}}\\
+    \intertext{d'où, en remplaçant $a$ à l'aide de~\ref{eq:r} :}
     \boxed{r_{\text{O,max}} = (\sqrt{2} - 1)r} \label{eq:rmax}
-\end{equation}
+\end{gather}
 \begin{rem}
     Il sera convénient d'utiliser le rapport noté $x$ :
     \begin{equation*}
@@ -216,20 +212,16 @@ $\frac{a}{2}$.
 \paragraph{Calcul de $r_{\text{T,max}}$}
 Les sphères sont tangentes le long de la diagonale du cube.
 En notant $D$ la diagonale du cube, on a $D = \sqrt{3}a$
-(par Pythagore). La diagonale $D'$ d'un cube d'arête $\frac{a}{2}$
-vaut donc $D' = D\div 2 = \frac{\sqrt{3}a}{2}$
+(par Pythagore). La diagonale $\hat{D}$ d'un cube d'arête $\frac{a}{2}$
+vaut donc $\hat{D} = D\div 2 = \frac{\sqrt{3}a}{2}$
 Comme le site est au milieu du cube d'arête $\frac{a}{2}$, on a :
-\begin{equation*}
-    2r + 2r_{\text{T,max}} = D'
-\end{equation*}
-c'est-à-dire, en remplaçant :
-\begin{equation}
-    \boxed{r_{\text{T,max}} = r(\sqrt{\frac{3}{2}} - 1)}\label{eq:rmax_tetra}
-\end{equation}
-D'où,
-\begin{equation}
+\begin{gather}
+    2r + 2r_{\text{T,max}} = \hat{D}\\
+    \intertext{c'est-à-dire, en remplaçant :}
+    \boxed{r_{\text{T,max}} = r(\sqrt{\frac{3}{2}} - 1)}\label{eq:rmax_tetra}\\
+    \intertext{D'où,}
     x = \sqrt{\frac{3}{2}} - 1
-\end{equation}
+\end{gather}
 \index{CFC|)}
 
 
@@ -258,31 +250,21 @@ On se place dans le tétraèdre dont la base est le triangle formé
 par 3 motifs de la base de la maille et le sommet est le motif
 de la deuxième couche. Ce tétraèdre sera paramétré selon le
 schéma~\ref{fig:prm_geo_hc}.\\
-On notera $h$ pour la hauteur, donc $h = SH = \frac{c}{2}$.\\
+On notera $h$ pour la hauteur, donc $h = \text{SH} = \frac{c}{2}$.\\
 Par Pythagore, on a :
-\begin{equation}
-    a^2 = \text{PH}^2 + h^2 \label{eq:PH_a_h}
-\end{equation}
-Comme H est le centre de gravité du triangle PQR, on a
-\begin{equation}
-    \text{PH} = \frac{2}{3}\text{PN}\label{eq:PG_PN}
-\end{equation}
-or, en considérant l'angle formé par (PN) et (RN) :
-\begin{equation*}
-    \cos\Bigl( \frac{\pi}{6}\Bigr) = \frac{\text{PN}}{a}
-\end{equation*}
-D'où, en remplaçant PN à l'aide de~\ref{eq:PG_PN}:
-\begin{equation}
-    \text{PH} = \frac{\sqrt{3}a}{3}\label{eq:PH_a}
-\end{equation}
-En remplaçant PH dans~\ref{eq:PH_a_h}, on obtient :
-\begin{equation*}
-    h = \sqrt{\frac{2}{3}}a
-\end{equation*}
-Soit finalement
-\begin{equation}
+\begin{gather}
+    a^2 = \text{PH}^2 + h^2 \label{eq:PH_a_h}\\
+    \intertext{Comme H est le centre de gravité du triangle PQR, on a}
+    \text{PH} = \frac{2}{3}\text{PN}\label{eq:PG_PN}\\
+    \intertext{or, en considérant l'angle formé par (PN) et (RN) :}
+    \cos\Bigl( \frac{\pi}{6}\Bigr) = \frac{\text{PN}}{a}\\
+    \intertext{D'où, en remplaçant PN à l'aide de~\ref{eq:PG_PN}:}
+    \text{PH} = \frac{\sqrt{3}a}{3}\label{eq:PH_a}\\
+    \intertext{En remplaçant PH dans~\ref{eq:PH_a_h}, on obtient :}
+    h = \sqrt{\frac{2}{3}}a\\
+    \intertext{Soit finalement}
     \boxed{c=2\sqrt{\frac{2}{3}}a} \label{eq:c_hc}
-\end{equation}
+\end{gather}
 \begin{figure}
     \centering
     \includegraphics[width=5cm]{chap2/prm_geo_hc.png}
@@ -320,22 +302,16 @@ Soit finalement
 
 \subsection{Compacité}
 La formule~\ref{eq:comp} donne:
-\begin{equation*}
-    C = \frac{2 \times \frac{4}{3}\pi r^3}{V}
-\end{equation*}
-Or d'après~\ref{eq:volume} :
-\begin{equation*}
-    V=a^2 \frac{\sqrt{3}}{2}
-\end{equation*}
-Donc en remplaçant $a$ avec~\ref{eq;a_r_hc} :
-\begin{equation}
-    V=2^3\sqrt{2}r^3 \label{eq:V_hc}
-\end{equation}
-D'où :
-\begin{equation}
+\begin{gather}
+    C = \frac{2 \times \frac{4}{3}\pi r^3}{V}\\
+    \intertext{Or d'après~\ref{eq:volume} :}
+    V=a^2 \frac{\sqrt{3}}{2}\\
+    \intertext{Donc en remplaçant $a$ avec~\ref{eq;a_r_hc} :}
+    V=2^3\sqrt{2}r^3 \label{eq:V_hc}\\
+    \intertext{D'où :}
     \boxed{C = \frac{\pi}{3\sqrt{2}} \approx \np{0,74}}
     \label{eq:comp_hc}
-\end{equation}
+\end{gather}
 
 \subsection{Sites}
 \begin{rem}
@@ -453,13 +429,11 @@ Voir figure~\ref{fig:coordinence_cc}.
 \end{equation}
 
 \subsection{Compacité}
-\begin{equation*}
-    C = \frac{2\times \frac{4}{3} \pi r^3}{a^3}
-\end{equation*}
-D'où,
-\begin{equation}
+\begin{gather}
+    C = \frac{2\times \frac{4}{3} \pi r^3}{a^3}\\
+    \intertext{D'où,}
     C = \pi \frac{\sqrt{3}}{8} \approx \np{0,68}
-\end{equation}
+\end{gather}
 \begin{rem}
     La compacité de la structure cc est inférieure à celle
     des structures hc et cfc
