@@ -1,32 +1,32 @@
-\documentclass[11pt,a4paper]{book}
-\usepackage[a4paper,portrait]{typearea}
+\documentclass[11pt,a4paper]{scrbook}
+%\usepackage[a4paper,portrait]{typearea}
 \usepackage{fontspec}
 \usepackage[frenchb]{babel}
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage{unicode-math}
 \usepackage{xfrac}
 \usepackage{ellipsis}
-\usepackage{framed,array,tabulary,paralist,ulem}
+\usepackage{framed,array,tabulary,paralist}
 \usepackage[np]{numprint}
 \usepackage{color,colortbl}
 \usepackage{tikz,xcolor,wrapfig,graphicx,subfig}
 \usepackage{makeidx}
 \usepackage{url}
 
-\setmainfont{TeX Gyre Pagella}
+\setmainfont[Ligatures=TeX]{TeX Gyre Pagella}
+\addfontfeature{Fractions=On}
+\frenchspacing
 \graphicspath{{pictures/}}
 
-\theoremstyle{plain}
-\newtheorem{prop}{Propriété}
-
-
 \theoremstyle{definition}
-\newtheorem{defi}{Définition}
+\newtheorem{defi}{Définition}[chapter]
 
+\theoremstyle{plain}
+\newtheorem{prop}[defi]{Propriété}
 
 \theoremstyle{remark}
-\newtheorem*{rem}{Remarque}
-\newtheorem{ex}{Exemple}
+\newtheorem{rem}[defi]{Remarque}
+\newtheorem{ex}[defi]{Exemple}
 
 \makeindex
 
