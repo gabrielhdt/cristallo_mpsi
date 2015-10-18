@@ -84,10 +84,28 @@ visible sur la figure~\ref{fig:maille_hc}.
 \end{figure}
 \begin{figure}
     \centering
-    \includegraphics[width=9cm]{chap2/cristaux_metalliques.png}
+    \subfloat[Structure CC]
+    {\includegraphics[width=3.5cm]{chap2/cristaux_metalliques_cc_ens.png}}
+    \qquad
+    \subfloat[Structure CFC]
+    {\includegraphics[width=3.5cm]{chap2/cristaux_metalliques_cfc_ens.png}}
+    \qquad
+    \subfloat[Structure HC]
+    {\includegraphics[width=3.5cm]{chap2/cristaux_metalliques_hc_ens.png}}
     \caption{Structures métalliques}
 \end{figure}
-
+\begin{figure}
+    \centering
+    \subfloat[CC]
+    {\includegraphics[width=1cm]{chap2/cristaux_metalliques_cc_maille.png}}
+    \qquad
+    \subfloat[CFC]
+    {\includegraphics[width=1cm]{chap2/cristaux_metalliques_cfc_maille.png}}
+    \qquad
+    \subfloat[HC]
+    {\includegraphics[width=1cm]{chap2/cristaux_metalliques_hc_maille.png}}
+    \caption{Mailles métalliques}
+\end{figure}
 
 \section{Structure CFC}\index{CFC|(}
 Les paramètres suivants seront utilisés :
@@ -122,10 +140,8 @@ Les sphères étant tangentes le long de la diagonale, on obtient :
 \subsection{Nombre de motifs par maille}
 Voir figure~\ref{fig:maille_cfc}.
 \begin{itemize}
-    \item Les 8 motifs aux 8 sommets sont chacun partagés
-        entre 8 mailles;
-    \item Les 6 motifs sur les 6 faces sont chacun partagés
-        entre 2 mailles.
+    \item Chaque motif à un sommet est partagé entre 8 mailles;
+    \item chaque motif sur une face est partagé entre deux mailles.
 \end{itemize}
 \begin{equation}
     Z = 8 \times \frac{1}{8} + 6 \times \frac{1}{2} = 4
@@ -172,11 +188,11 @@ long du c\^oté de la maille, on a :\index{réseau!hôte}
 \begin{rem}
     Il sera convénient d'utiliser le rapport noté $x$ :
     \begin{equation*}
-        \frac{r_{\text{O,max}}}{r} = x
+        \frac{r_{\text{O,max}}}{r} = x\text{.}
     \end{equation*}
     Dans le cas d'une CFC :
     \begin{equation*}
-        x = \sqrt{2} - 1
+        x = \sqrt{2} - 1\text{.}
     \end{equation*}
 \end{rem}
 
@@ -240,7 +256,7 @@ adoptent la structure hexagonale compacte.
     \item[$\rho$] masse volumique.
 \end{description}
 \subsection{Paramètre géométrique}
-Vue la figure~\ref{sfig:maille_hc_2d}, il est évident que :
+D'après la figure~\ref{sfig:maille_hc_2d}, il est évident que :
 \begin{equation}
     a = 2r\text{.} \label{eq;a_r_hc}
 \end{equation}
@@ -276,7 +292,7 @@ Par Pythagore, on a :
     peut être caractérisé par le rapport $\frac{c}{a}$.
     Ici, $\frac{c}{a} = 2\sqrt{\frac{2}{3}}\approx \np{1.63}$.
     Pour le magnésium, le rapport vaut
-    $\np{1,62}$.Cette valeur est très proche de celle
+    $\np{1,62}$. Cette valeur est très proche de celle
     obtenue ci-dessus, les atomes sont des sphères
     au contact. Pour le titane,
     $\frac{c}{a}=\np{1,59}$ et pour le cadmium,
@@ -289,9 +305,9 @@ Par Pythagore, on a :
 
 \subsection{Nombre de motifs par maille}
 \begin{itemize}
-    \item Les 8 motifs aux 8 sommets sont chacun partagés entre
+    \item Chaque motif placé à un sommet (8) est partagé entre
         8 mailles;
-    \item Un motif entièrement dans la maille situé à
+    \item un motif entièrement dans la maille situé à
         $\sfrac{c}{2}$ et aligné avec le centre de gravité d'un
         des deux triangles formés par 3 des motifs de la base de
         la maille.
@@ -353,13 +369,13 @@ de motifs dans la maille, soit deux.
 \end{ex}
 \begin{ex}[Structure hc : le magnésium]\index{HC}
     $a = 320$pm,
-    $M = \np{24,3}$g.mol$^{-1}$
+    $M = \np{24,3}$g.mol$^{-1}$.
     \begin{compactitem}
         \item Déterminer la hauteur $c$ de la maille hexagonale
             compacte;
         \item Déterminer la relation entre $a$ et $r$ le rayon
             d'un atome du métal;
-        \item Déterminer la coordinence et le nombre de motifs
+        \item Déterminer la coordinence et le nombre de motifs par
             maille;
         \item Déterminer la compacité.
     \end{compactitem}
