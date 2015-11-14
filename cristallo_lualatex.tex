@@ -11,6 +11,7 @@
 \usepackage[svgnames]{xcolor}
 \usepackage{tikz,wrapfig,graphicx,subfig}
 \usepackage[svgnames]{xcolor}
+\usepackage[figure,xspace]{totalcount}
 \usepackage{makeidx}
 \usepackage{url}
 
@@ -78,7 +79,7 @@
 {\Large Gabriel Hondet}\\[0.167\textheight]
 {\bfseries MPSI}\\[\baselineskip]
 {\textcolor{Red}{\Huge Cristallographie}}\\[\baselineskip]
-{\small Avec 29 illustrations}\par
+{\small Avec \totalfigures figures}\par
 \vfill
 %{\Large The Publisher \plogo}\par
 \vspace*{3\baselineskip}
@@ -86,7 +87,7 @@
 
 \begin{document}
 \frontmatter
-\pagestyle{empty}
+\thispagestyle{empty}
 \titleTH
 \include{preface}
 \tableofcontents
