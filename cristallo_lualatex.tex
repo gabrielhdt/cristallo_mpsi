@@ -8,8 +8,9 @@
 \usepackage{ellipsis}
 \usepackage{framed,array,tabulary,paralist}
 \usepackage[np]{numprint}
-\usepackage{color,colortbl}
-\usepackage{tikz,xcolor,wrapfig,graphicx,subfig}
+\usepackage[svgnames]{xcolor}
+\usepackage{tikz,wrapfig,graphicx,subfig}
+\usepackage[svgnames]{xcolor}
 \usepackage{makeidx}
 \usepackage{url}
 
@@ -35,9 +36,58 @@
 \author{}
 \date{}
 
+%% Titlepage
+\providecommand{\HUGE}{\Huge}% if not using memoir
+\newlength{\drop}% for my convenience
+%% select a (FontSite) font by its font family ID
+\newcommand*{\FSfont}[1]{\fontencoding{T1}\fontfamily{#1}\selectfont}
+%% if you don’t have the FontSite fonts either \renewcommand*{\FSfont}[1]{}
+%% or use your own choice of family.
+%% select a (TeX Font) font by its font family ID
+\newcommand*{\TXfont}[1]{\fontencoding{T1}\fontfamily{#1}\selectfont}
+%% Generic publisher’s logo
+\newcommand*{\plogo}{\fbox{$\mathcal{PL}$}}
+%45
+%% Some shades
+\definecolor{Dark}{gray}{0.2}
+\definecolor{MedDark}{gray}{0.4}
+\definecolor{Medium}{gray}{0.6}
+\definecolor{Light}{gray}{0.8}
+%%%% Additional font series macros
+\makeatletter
+%%%% light series
+%% e.g., kernel doc, section s: line 12 or thereabouts
+\DeclareRobustCommand\ltseries
+{\not@math@alphabet\ltseries\relax
+\fontseries\ltdefault\selectfont}
+%% e.g., kernel doc, section t: line 32 or thereabouts
+\newcommand{\ltdefault}{l}
+%% e.g., kernel doc, section v: line 19 or thereabouts
+\DeclareTextFontCommand{\textlt}{\ltseries}
+% heavy(bold) series
+\DeclareRobustCommand\hbseries
+{\not@math@alphabet\hbseries\relax
+\fontseries\hbdefault\selectfont}
+\newcommand{\hbdefault}{hb}
+\DeclareTextFontCommand{\texthb}{\hbseries}
+\makeatother
+
+\newcommand*{\titleTH}{\begingroup% T&H Typography
+\raggedleft
+\vspace*{\baselineskip}
+{\Large Gabriel Hondet}\\[0.167\textheight]
+{\bfseries MPSI}\\[\baselineskip]
+{\textcolor{Red}{\Huge Cristallographie}}\\[\baselineskip]
+{\small Avec 29 illustrations}\par
+\vfill
+%{\Large The Publisher \plogo}\par
+\vspace*{3\baselineskip}
+\endgroup}
+
 \begin{document}
 \frontmatter
-\maketitle
+\pagestyle{empty}
+\titleTH
 \include{preface}
 \tableofcontents
 \listoffigures
